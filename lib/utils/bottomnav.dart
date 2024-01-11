@@ -1,11 +1,8 @@
 import 'package:flutter/material.dart';
 import 'package:hexcolor/hexcolor.dart';
 
-class Botnav extends StatefulWidget implements PreferredSizeWidget  {
+class Botnav extends StatefulWidget {
   const Botnav({super.key});
-
-  @override
-  Size get preferredSize => const Size.fromHeight(kToolbarHeight);
 
   @override
   State<Botnav> createState() => _BotnavState();
@@ -21,7 +18,7 @@ class _BotnavState extends State<Botnav> {
         setState(() {
           cur = index;
         });
-        },
+      },
       backgroundColor: HexColor("#EAF8FF"),
       indicatorColor: Colors.black,
       selectedIndex: cur,
