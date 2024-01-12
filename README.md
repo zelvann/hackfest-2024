@@ -33,7 +33,8 @@ Melakukan integrasi dengan platform kalender sehingga memungkinkan untuk mengelo
 <div align="left">Stage 2:</div>
 
 - Melakukan perancangan dasar
-- Membuat homepage, halaman login akun, halaman untuk registrasi akun (register)
+- Membuat halaman login akun, halaman untuk registrasi akun (register)
+![Halaman Login](images/docs/login.jpeg) ![Halaman Register](images/docs/sign_up.jpeg)
 - Membuat prototipe halaman untuk klasifikasi penyakit ikan
 
 <div align="center">#######</div>
