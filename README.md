@@ -26,11 +26,17 @@ Memanfaatkan model machine learning melakukan klasifikasi penyakit ikan dengan 3
 Melakukan integrasi dengan platform kalender sehingga memungkinkan untuk mengelola siklus akuakultur
 </div>
 
+<div align="center"> </div>
+
 # <div align="center">Progres Tim Hacker</div>
+
+<div align="center">Stage 2:</div>
+
 - Melakukan perancangan dasar
 - Membuat homepage, halaman login akun, halaman untuk registrasi akun (register)
 - Membuat prototipe halaman untuk klasifikasi penyakit ikan
 
+<div align="center"> </div>
 
 ### <div align="left">Terima Kasih</div>
 > BismillahDirestuiBapak 2.0
