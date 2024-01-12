@@ -1,3 +1,3 @@
-<div align="center"><img src = "images/logo.png" width = 50% height= 50%></div>
+<div align="center"><img src = "images/logo.png" width = 20% height= 20%></div>
 
 # TAMPAN (TAMbak Petani ANdalan)
