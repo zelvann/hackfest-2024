@@ -1,8 +1,9 @@
 import 'package:flutter/material.dart';
 import 'package:hexcolor/hexcolor.dart';
-import 'package:tampan/utils/button.dart';
+import 'package:tampan/widgets/button.dart';
 import 'package:tampan/views/login_form.dart';
-import 'package:tampan/utils/input_type.dart';
+import 'package:tampan/widgets/input_type.dart';
+import 'package:tampan/widgets/line_text.dart';
 
 class Registerpg extends StatelessWidget {
   const Registerpg({super.key});
@@ -12,22 +13,30 @@ class Registerpg extends StatelessWidget {
     return Column(
       crossAxisAlignment: CrossAxisAlignment.start,
       children: <Widget>[
-        Formutils(
+        Center(
+          child: Text(
+            'SIGN UP',
+            style: TextStyle(
+                color: HexColor('#023047'),
+                fontWeight: FontWeight.w700,
+                fontSize: 48,
+                fontFamily: 'Poppins'
+            ),
+          ),
+        ),
+        const Formwidget(
             label: 'First Name',
             hintText: 'Type Your First Name'
         ),
-        SizedBox(height: 8),
-        Formutils(
+        const Formwidget(
             label: 'Email',
             hintText: 'Type Your Email'
         ),
-        SizedBox(height: 8),
-        Formutils(
+        const Formwidget(
             label: 'Password',
             hintText: 'Type Your Password'
         ),
-        SizedBox(height: 8),
-        Buttonutil(
+        Buttonwidget(
           label: 'SIGN UP',
           bgColor: HexColor('#023047'),
           fColor: Colors.white,
@@ -35,12 +44,11 @@ class Registerpg extends StatelessWidget {
 
           },
         ),
-        SizedBox(height: 8),
         Center(
           child: Row(
             mainAxisAlignment: MainAxisAlignment.center,
             children: [
-              Text(
+              const Text(
                 'Already have an account?',
                 style: TextStyle(
                   fontSize: 14,
@@ -51,7 +59,7 @@ class Registerpg extends StatelessWidget {
                   onPressed: () {
                     Navigator.push(
                         context,
-                        MaterialPageRoute(builder: (context) => Loginpg())
+                        MaterialPageRoute(builder: (context) => const Loginpg())
                     );
                   },
                   child: Text(
@@ -67,8 +75,9 @@ class Registerpg extends StatelessWidget {
             ],
           ),
         ),
-        SizedBox(height: 8),
-        Buttonutil(
+        const SizedBox(height: 8),
+        const Linetext(),
+        Buttonwidget(
           label: 'Log In With Goggle',
           bgColor: Colors.white,
           fColor: HexColor('#023047'),
@@ -76,7 +85,8 @@ class Registerpg extends StatelessWidget {
 
           },
           isUseshape: true,
-        )
+          imgPath: 'images/goggle_icon.png',
+        ),
       ],
     );
   }
