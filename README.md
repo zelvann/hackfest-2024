@@ -36,8 +36,8 @@ Melakukan integrasi dengan platform kalender sehingga memungkinkan untuk mengelo
 - Membuat halaman login akun, halaman untuk registrasi akun (register)
 
 <div align="center">
-  <img src="images/docs/login.jpeg" width=100% height= 20%/>
-  <img src="images/docs/sign_up.jpeg" width=100% height= 20% /> 
+  <img src="images/docs/login.jpeg" width=20% height= 20%/>
+  <img src="images/docs/sign_up.jpeg" width=20% height= 20% /> 
 </div>
 
 - Membuat prototipe halaman untuk klasifikasi penyakit ikan
