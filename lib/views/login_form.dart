@@ -35,12 +35,10 @@ class _LoginpgState extends State<Loginpg> {
           label: 'First Name',
           hintText: 'Type Your First Name'
         ),
-        // const SizedBox(height: 8),
         const Formwidget(
           label: 'Password',
           hintText: 'Type Your Password',
         ),
-        const SizedBox(height: 8),
         Padding(
           padding: const EdgeInsets.symmetric(horizontal: 25),
           child: Row(
@@ -84,7 +82,7 @@ class _LoginpgState extends State<Loginpg> {
                 ),
               ),
               const Text(
-                'Forgot Password',
+                'Forgot Password?',
                 style: TextStyle(
                   fontSize: 14,
                   fontWeight: FontWeight.w400,
@@ -144,7 +142,7 @@ class _LoginpgState extends State<Loginpg> {
 
           },
           isUseshape: true,
-          imgPath: 'images/goggle_icon.png',
+          imgPath: 'images/icon/goggle.png',
         ),
       ],
     );

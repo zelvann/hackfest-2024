@@ -1,7 +1,7 @@
 import 'package:flutter/material.dart';
 import 'package:hexcolor/hexcolor.dart';
 
-class Buttonwidget extends StatelessWidget {
+class Featurebutton extends StatelessWidget {
   final String label;
   final Color bgColor, fColor;
   final VoidCallback isPressed;
@@ -10,7 +10,7 @@ class Buttonwidget extends StatelessWidget {
   final IconData? icon;
   final Color? iconColor;
 
-  const Buttonwidget({
+  const Featurebutton({
     Key? key,
     required this.label,
     required this.bgColor,
@@ -19,7 +19,7 @@ class Buttonwidget extends StatelessWidget {
     this.imgPath,
     this.isUseshape,
     this.icon,
-    this.iconColor
+    this.iconColor,
   }) : super(key: key);
 
   @override
@@ -30,32 +30,44 @@ class Buttonwidget extends StatelessWidget {
         mainAxisAlignment: MainAxisAlignment.center,
         children: <Widget>[
           Container(
-            width: double.infinity,
-            padding: const EdgeInsets.symmetric(horizontal: 35),
+            width: 180,
+            height: 75,
+            padding: const EdgeInsets.symmetric(horizontal: 5, vertical: 10),
             child: ElevatedButton(
               style: ElevatedButton.styleFrom(
                 backgroundColor: bgColor,
                 foregroundColor: fColor,
                 shape: isUseshape != null
                     ? RoundedRectangleBorder(
-                  borderRadius: BorderRadius.circular(18.0),
+                  borderRadius: BorderRadius.circular(8.0),
                   side: BorderSide(color: HexColor('#023047')),
                 ) : null,
               ),
               onPressed: isPressed,
               child: Row(
                 mainAxisAlignment: MainAxisAlignment.center,
+                crossAxisAlignment: CrossAxisAlignment.center,
                 children: [
                   if (imgPath != null || icon != null)
                     Padding(
                       padding: const EdgeInsets.only(right: 8.0),
-                      child: imgPath != null ?
-                      Image.asset(
+                      child: imgPath != null
+                          ? Image.asset(
                         imgPath!,
-                        width: 15,height: 15,
+                        width: 15,
+                        height: 15,
                       ) : Icon(icon, color: iconColor),
                     ),
-                  Text(label),
+                  Flexible(
+                    child: Text(
+                      label,
+                      overflow: TextOverflow.visible,
+                      style: const TextStyle(
+                        fontSize: 14,
+                        fontFamily: 'Poppins'
+                      ),
+                    ),
+                  ),
                 ],
               ),
             ),

@@ -85,7 +85,7 @@ class Registerpg extends StatelessWidget {
 
           },
           isUseshape: true,
-          imgPath: 'images/goggle_icon.png',
+          imgPath: 'images/icon/goggle.png',
         ),
       ],
     );

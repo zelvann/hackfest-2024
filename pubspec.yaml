@@ -28,8 +28,12 @@ dev_dependencies:
 flutter:
   uses-material-design: true
   assets:
+    - images/icon/au.png
+    - images/icon/circle.png
+    - images/icon/goggle.png
+    - images/icon/identifikasi.png
     - images/logo.png
-    - images/goggle_icon.png
+    - images/icon/sun.png
   fonts:
     - family: Poppins
       fonts:

@@ -37,7 +37,8 @@ Melakukan integrasi dengan platform kalender sehingga memungkinkan untuk mengelo
 
 <div align="center">
   <img src="images/docs/login.jpeg" width=20% height= 20%/>
-  <img src="images/docs/sign_up.jpeg" width=20% height= 20% /> 
+  <img src="images/docs/sign_up.jpeg" width=20% height= 20% />
+ <img src="images/docs/home.jpeg" width=20% height= 20% />
 </div>
 
 <br>
