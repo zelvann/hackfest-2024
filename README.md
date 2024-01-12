@@ -33,7 +33,7 @@ Melakukan integrasi dengan platform kalender sehingga memungkinkan untuk mengelo
 <div align="left">Stage 2:</div>
 
 - Melakukan perancangan dasar
-- Membuat halaman login akun, halaman untuk registrasi akun (register)
+- Membuat halaman login akun, halaman untuk registrasi akun (register), dan homepage
 
 <div align="center">
   <img src="images/docs/login.jpeg" width=20% height= 20%/>
