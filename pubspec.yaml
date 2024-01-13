@@ -35,6 +35,7 @@ flutter:
     - images/icon/identifikasi.png
     - images/logo.png
     - images/icon/sun.png
+    - images/icon/unknown.png
   fonts:
     - family: Poppins
       fonts:

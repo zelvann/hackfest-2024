@@ -13,18 +13,18 @@ class Appbartampan extends StatelessWidget implements PreferredSizeWidget {
       title: Row(
         children: [
           Image.asset(
-            'images/logo.png',
-            height: 34,
-            width: 34
+              'images/logo.png',
+              height: 34,
+              width: 34
           ),
           const SizedBox(width: 9),
           Text(
             'TAMPAN',
             style: TextStyle(
-              fontSize: 24,
-              fontWeight: FontWeight.w800,
-              fontFamily: 'Poppins',
-              color: HexColor("#023047")
+                fontSize: 24,
+                fontWeight: FontWeight.w800,
+                fontFamily: 'Poppins',
+                color: HexColor("#023047")
             ),
           )
         ],
