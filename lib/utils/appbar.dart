@@ -12,12 +12,14 @@ class Appbartampan extends StatelessWidget implements PreferredSizeWidget {
     return AppBar(
       title: Row(
         children: [
-          Image.asset(
-              'images/logo.png',
-              height: 34,
-              width: 34
+          Container(
+            margin: const EdgeInsets.only(right: 9),
+            child: Image.asset(
+                'images/logo.png',
+                height: 34,
+                width: 34
+            )
           ),
-          const SizedBox(width: 9),
           Text(
             'TAMPAN',
             style: TextStyle(
@@ -25,10 +27,10 @@ class Appbartampan extends StatelessWidget implements PreferredSizeWidget {
                 fontWeight: FontWeight.w800,
                 fontFamily: 'Poppins',
                 color: HexColor("#023047")
-            ),
+            )
           )
-        ],
-      ),
+        ]
+      )
     );
   }
 }
@@ -45,23 +47,24 @@ class Appbarform extends StatelessWidget implements PreferredSizeWidget {
       flexibleSpace: Column(
         mainAxisAlignment: MainAxisAlignment.center,
         children: [
-          Image.asset(
-            'images/logo.png',
-            height: 55,
-            width: 67,
+          Container(
+            margin: const EdgeInsets.only(bottom: 10),
+            child:  Image.asset(
+              'images/logo.png',
+              height: 55,
+              width: 67
+            )
           ),
-          const SizedBox(height: 10),
           const Text(
             'TAMPAN',
             style: TextStyle(
               fontSize: 20,
               fontWeight: FontWeight.w800,
-              fontFamily: 'Poppins',
-              color: Color(0xFF023047),
-            ),
-          ),
-        ],
-      ),
+              color: Color(0xFF023047)
+            )
+          )
+        ]
+      )
     );
   }
 }

@@ -1,7 +1,7 @@
 import 'package:flutter/material.dart';
 import 'package:hexcolor/hexcolor.dart';
+import 'package:tampan/screens/login.dart';
 import 'package:tampan/widgets/button.dart';
-import 'package:tampan/views/login_form.dart';
 import 'package:tampan/widgets/input_type.dart';
 import 'package:tampan/widgets/line_text.dart';
 
@@ -21,9 +21,8 @@ class Registerpg extends StatelessWidget {
                   color: HexColor('#023047'),
                   fontWeight: FontWeight.w700,
                   fontSize: 48,
-                  fontFamily: 'Poppins'
-              ),
-            ),
+              )
+            )
           ),
           const Formwidget(
               label: 'First Name',
@@ -42,10 +41,14 @@ class Registerpg extends StatelessWidget {
             bgColor: HexColor('#023047'),
             fColor: Colors.white,
             isPressed: () {
-
-            },
+              Navigator.pushReplacement(
+                context,
+                MaterialPageRoute(builder: (context) => const Loginscreen())
+              );
+            }
           ),
-          Center(
+          Container(
+            margin: const EdgeInsets.only(bottom: 8),
             child: Row(
               mainAxisAlignment: MainAxisAlignment.center,
               children: [
@@ -53,30 +56,27 @@ class Registerpg extends StatelessWidget {
                   'Already have an account?',
                   style: TextStyle(
                       fontSize: 14,
-                      fontFamily: 'Poppins'
-                  ),
+                  )
                 ),
                 TextButton(
                   onPressed: () {
-                    Navigator.push(
+                    Navigator.pushReplacement(
                         context,
-                        MaterialPageRoute(builder: (context) => const Loginpg())
+                        MaterialPageRoute(builder: (context) => const Loginscreen())
                     );
                   },
                   child: Text(
                     'Log In',
                     style: TextStyle(
                         fontSize: 14,
-                        fontFamily: 'Poppins',
                         fontWeight: FontWeight.w800,
                         color: HexColor('#023047')
-                    ),
-                  ),
+                    )
+                  )
                 )
-              ],
-            ),
+              ]
+            )
           ),
-          const SizedBox(height: 8),
           const Linetext(),
           Buttonwidget(
             label: 'Log In With Goggle',

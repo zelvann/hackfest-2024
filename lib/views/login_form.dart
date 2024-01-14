@@ -1,5 +1,7 @@
 import 'package:flutter/material.dart';
 import 'package:hexcolor/hexcolor.dart';
+import 'package:tampan/screens/home.dart';
+import 'package:tampan/screens/register.dart';
 import 'package:tampan/widgets/line_text.dart';
 import 'package:tampan/widgets/input_type.dart';
 import 'package:tampan/widgets/button.dart';
@@ -20,27 +22,32 @@ class _LoginpgState extends State<Loginpg> {
       child: Column(
         crossAxisAlignment: CrossAxisAlignment.start,
         children: <Widget>[
-          Center(
-            child: Text(
-              'LOG IN',
-              style: TextStyle(
-                  color: HexColor('#023047'),
-                  fontWeight: FontWeight.w700,
-                  fontSize: 48,
-                  fontFamily: 'Poppins'
-              ),
-            ),
+          Container(
+            margin: const EdgeInsets.only(bottom: 8),
+            child: Row(
+              mainAxisAlignment: MainAxisAlignment.center,
+              children: [
+                Text(
+                  'LOG IN',
+                  style: TextStyle(
+                    color: HexColor('#023047'),
+                    fontWeight: FontWeight.w700,
+                    fontSize: 48
+                  )
+                )
+              ]
+            )
           ),
-          const SizedBox(height: 8),
           const Formwidget(
               label: 'First Name',
               hintText: 'Type Your First Name'
           ),
           const Formwidget(
             label: 'Password',
-            hintText: 'Type Your Password',
+            hintText: 'Type Your Password'
           ),
-          Padding(
+          Container(
+            margin: const EdgeInsets.only(bottom: 8),
             padding: const EdgeInsets.symmetric(horizontal: 25),
             child: Row(
               mainAxisAlignment: MainAxisAlignment.spaceBetween,
@@ -68,72 +75,78 @@ class _LoginpgState extends State<Loginpg> {
                                 return HexColor('#023047');
                               }
                           ),
-                          checkColor: Colors.white,
-                        ),
+                          checkColor: Colors.white
+                        )
                       ),
-                      const Text(
+                      Text(
                         'Remember Me',
                         style: TextStyle(
                           fontSize: 14,
-                          fontFamily: 'Poppins',
-                          fontWeight: FontWeight.w400,
-                        ),
-                      ),
-                    ],
-                  ),
+                          color: HexColor('#6F6F6F')
+                        )
+                      )
+                    ]
+                  )
                 ),
-                const Text(
-                  'Forgot Password?',
-                  style: TextStyle(
-                    fontSize: 14,
-                    fontWeight: FontWeight.w400,
-                    fontFamily: 'Poppins',
-                  ),
-                ),
-              ],
-            ),
+                TextButton(
+                    onPressed: () {
+                      Navigator.pushReplacement(
+                          context,
+                          MaterialPageRoute(builder: (context) => const Loginpg())
+                      );
+                    },
+                    child: Text(
+                        'Forgot Password?',
+                        style: TextStyle(
+                            fontSize: 14,
+                            color: HexColor('#6F6F6F')
+                        )
+                    )
+                )
+              ]
+            )
           ),
-          const SizedBox(height: 8),
           Buttonwidget(
             label: 'LOG IN',
             bgColor: HexColor('#023047'),
             fColor: Colors.white,
             isPressed: () {
-
-            },
+              Navigator.pushReplacement(
+                  context,
+                  MaterialPageRoute(builder: (context) => const Homescreen())
+              );
+            }
           ),
-          Center(
+          Container(
+            margin: const EdgeInsets.only(bottom: 8),
             child: Row(
               mainAxisAlignment: MainAxisAlignment.center,
               children: [
                 const Text(
                   'Dont have an account?',
                   style: TextStyle(
-                      fontSize: 14,
-                      fontFamily: 'Poppins'
-                  ),
+                      fontSize: 14
+                  )
                 ),
                 TextButton(
                   onPressed: () {
-                    Navigator.push(
+                    Navigator.pushReplacement(
                         context,
-                        MaterialPageRoute(builder: (context) => const Loginpg())
+                        MaterialPageRoute(builder: (context) => const Registerscreen())
                     );
                   },
                   child: Text(
                     'Sign Up',
                     style: TextStyle(
                         fontSize: 14,
-                        fontFamily: 'Poppins',
                         fontWeight: FontWeight.w800,
                         color: HexColor('#023047')
-                    ),
-                  ),
-                ),
-              ],
-            ),
+                    )
+                  )
+                )
+              ]
+            )
           ),
-          const SizedBox(height: 8),
           const Linetext(),
           Buttonwidget(
             label: 'Log In With Goggle',
@@ -143,7 +156,7 @@ class _LoginpgState extends State<Loginpg> {
 
             },
             isUseshape: true,
-            imgPath: 'images/icon/goggle.png',
+            imgPath: 'images/icon/goggle.png'
           )
         ]
       )

@@ -39,8 +39,8 @@ class Buttonwidget extends StatelessWidget {
                 shape: isUseshape != null
                     ? RoundedRectangleBorder(
                   borderRadius: BorderRadius.circular(18.0),
-                  side: BorderSide(color: HexColor('#023047')),
-                ) : null,
+                  side: BorderSide(color: HexColor('#023047'))
+                ) : null
               ),
               onPressed: isPressed,
               child: Row(
@@ -53,15 +53,15 @@ class Buttonwidget extends StatelessWidget {
                       Image.asset(
                         imgPath!,
                         width: 15,height: 15,
-                      ) : Icon(icon, color: iconColor),
+                      ) : Icon(icon, color: iconColor)
                     ),
-                  Text(label),
-                ],
-              ),
-            ),
-          ),
-        ],
-      ),
+                  Text(label)
+                ]
+              )
+            )
+          )
+        ]
+      )
     );
   }
 }

@@ -8,7 +8,7 @@ class Formwidget extends StatelessWidget {
   const Formwidget({
     Key? key,
     required this.label,
-    required this.hintText,
+    required this.hintText
   }) : super(key: key);
 
   @override
@@ -26,11 +26,9 @@ class Formwidget extends StatelessWidget {
                 label,
                 style: TextStyle(
                   fontSize: 14,
-                  fontWeight: FontWeight.w500 ,
-                  fontFamily: 'Poppins',
-                  color: HexColor("#023047"),
-                ),
-              ),
+                  color: HexColor("#023047")
+                )
+              )
             ),
             Container(
               padding: const EdgeInsets.symmetric(horizontal: 8,vertical: 6),
@@ -42,16 +40,14 @@ class Formwidget extends StatelessWidget {
                   hintText: hintText,
                   hintStyle: TextStyle(
                     color: HexColor('#72706C'),
-                    fontFamily: 'Poppins',
-                    fontSize: 16,
-                    fontWeight: FontWeight.w400,
-                  ),
-                ),
-              ),
-            ),
-          ],
-        ),
-      ),
+                    fontSize: 16
+                  )
+                )
+              )
+            )
+          ]
+        )
+      )
     );
   }
 }

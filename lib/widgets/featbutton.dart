@@ -19,7 +19,7 @@ class Featurebutton extends StatelessWidget {
     this.imgPath,
     this.isUseshape,
     this.icon,
-    this.iconColor,
+    this.iconColor
   }) : super(key: key);
 
   @override
@@ -41,7 +41,7 @@ class Featurebutton extends StatelessWidget {
                     ? RoundedRectangleBorder(
                   borderRadius: BorderRadius.circular(8.0),
                   side: BorderSide(color: HexColor('#023047')),
-                ) : null,
+                ) : null
               ),
               onPressed: isPressed,
               child: Row(
@@ -55,25 +55,24 @@ class Featurebutton extends StatelessWidget {
                           ? Image.asset(
                         imgPath!,
                         width: 15,
-                        height: 15,
-                      ) : Icon(icon, color: iconColor),
+                        height: 15
+                      ) : Icon(icon, color: iconColor)
                     ),
                   Flexible(
                     child: Text(
                       label,
                       overflow: TextOverflow.visible,
                       style: const TextStyle(
-                        fontSize: 14,
-                        fontFamily: 'Poppins'
-                      ),
-                    ),
-                  ),
-                ],
-              ),
-            ),
-          ),
-        ],
-      ),
+                        fontSize: 14
+                      )
+                    )
+                  )
+                ]
+              )
+            )
+          )
+        ]
+      )
     );
   }
 }

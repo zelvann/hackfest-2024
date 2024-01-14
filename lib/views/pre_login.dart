@@ -1,9 +1,12 @@
 import 'package:flutter/material.dart';
 import 'package:hexcolor/hexcolor.dart';
+import 'package:tampan/screens/login.dart';
+import 'package:tampan/screens/register.dart';
 import 'package:tampan/widgets/button.dart';
 
 class Preloginpg extends StatelessWidget {
   const Preloginpg({super.key});
+  static Color color = HexColor('#023047');
 
   @override
   Widget build(BuildContext context) {
@@ -24,10 +27,9 @@ class Preloginpg extends StatelessWidget {
             child: Text(
                 'WELCOME !',
                 style: TextStyle(
-                    fontFamily: 'Poppins',
                     fontSize: 32,
                     fontWeight: FontWeight.w800,
-                    color: HexColor('#023047')
+                    color: color
                 )
             )
           ),
@@ -37,32 +39,37 @@ class Preloginpg extends StatelessWidget {
             child: const Text(
               'Selamat datang di TAMPAN! Aplikasi pintar untuk petani tambak sukses. Tingkatkan produktivitas dan efisiensi bisnis Anda. Masuk sekarang untuk pengalaman luar biasa!',
               style: TextStyle(
-                  fontSize: 10,
-                  fontFamily: 'Poppins',
+                  fontSize: 12,
                   color: Colors.black
               )
             )
           ),
           Buttonwidget(
             label: 'SIGN UP',
-            bgColor: HexColor('#023047'),
+            bgColor: color,
             fColor: Colors.white,
             isPressed: () {
-
+              Navigator.pushReplacement(
+                  context,
+                  MaterialPageRoute(builder: (context) => const Registerscreen())
+              );
             },
-            isUseshape: true,
+            isUseshape: true
           ),
           Buttonwidget(
             label: 'LOG IN',
             bgColor: Colors.white,
-            fColor: HexColor('#023047'),
+            fColor: color,
             isPressed: () {
-
+              Navigator.pushReplacement(
+                  context,
+                  MaterialPageRoute(builder: (context) => const Loginscreen())
+              );
             },
-            isUseshape: true,
+            isUseshape: true
           )
-        ],
-      ),
+        ]
+      )
     );
   }
 }

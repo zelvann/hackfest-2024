@@ -63,7 +63,7 @@ class Profilepg extends StatelessWidget {
             )
           ),
           Container(
-            padding: const EdgeInsets.all(18),
+            padding: const EdgeInsets.only(left: 18,right: 18,top: 18),
             margin: const EdgeInsets.only(bottom: 20),
             decoration: BoxDecoration(
               border: Border.all(
@@ -74,23 +74,29 @@ class Profilepg extends StatelessWidget {
             child: Column(
               crossAxisAlignment: CrossAxisAlignment.end,
               children: [
-                const Text(
-                  'Bagikan TAMPAN dan bantu para petani tambak menyelesaikan masalah mereka',
-                  style: TextStyle(
-                      fontFamily: 'Poppins',
-                      fontSize: 12,
-                      color: Colors.black
+                Container(
+                  margin: const EdgeInsets.only(bottom: 5),
+                  child: const Text(
+                      'Bagikan TAMPAN dan bantu para petani tambak menyelesaikan masalah mereka',
+                      style: TextStyle(
+                          fontFamily: 'Poppins',
+                          fontSize: 12,
+                          color: Colors.black
+                      )
                   )
                 ),
-                const SizedBox(height: 15),
-                Text(
-                  'Bagikan Plantix',
-                  style: TextStyle(
-                    color: HexColor('#219EBC'),
-                    fontSize: 12,
-                    fontFamily: 'Poppins',
-                    fontWeight: FontWeight.w700
-                  )
+                TextButton(
+                    onPressed: () {
+
+                    },
+                    child: Text(
+                        'Bagikan Plantix',
+                        style: TextStyle(
+                            fontSize: 12,
+                            fontWeight: FontWeight.w700,
+                            color: HexColor('#219EBC')
+                        )
+                    )
                 )
               ]
             )
@@ -104,14 +110,13 @@ class Profilepg extends StatelessWidget {
                   style: TextStyle(
                       fontSize: 13,
                       fontWeight: FontWeight.w700,
-                      fontFamily: 'Poppins',
                       color: Colors.black
                   )
               )
           ),
           Container(
             width: double.infinity,
-            padding: const EdgeInsets.all(18),
+            padding: const EdgeInsets.only(left: 18,right: 18,top: 18),
             decoration: BoxDecoration(
                 border: Border.all(
                     color: HexColor('#8ECAE6'),
@@ -121,26 +126,33 @@ class Profilepg extends StatelessWidget {
             child: Column(
               crossAxisAlignment: CrossAxisAlignment.start,
               children: [
-                const Text(
-                    'Kami ingin mendengar pendapat dan saran Anda',
-                    style: TextStyle(
-                        fontFamily: 'Poppins',
-                        fontSize: 12,
-                        color: Colors.black
-                    )
-                ),
-                const SizedBox(height: 15),
                 Container(
-                  margin: const EdgeInsets.only(left: 229),
-                  child: Text(
-                    'Berikan Tanggapan',
-                    style: TextStyle(
-                        color: HexColor('#219EBC'),
-                        fontSize: 12,
-                        fontFamily: 'Poppins',
-                        fontWeight: FontWeight.w700
-                    )
+                  margin: const EdgeInsets.only(bottom: 5),
+                  child: const Text(
+                      'Kami ingin mendengar pendapat dan saran Anda',
+                      style: TextStyle(
+                          fontSize: 12,
+                          color: Colors.black
+                      )
                   )
+                ),
+                Row(
+                  mainAxisAlignment: MainAxisAlignment.end,
+                  children: [
+                    TextButton(
+                        onPressed: () {
+
+                        },
+                        child: Text(
+                            'Berikan Tanggapan',
+                            style: TextStyle(
+                                fontSize: 12,
+                                fontWeight: FontWeight.w700,
+                                color: HexColor('#219EBC')
+                            )
+                        )
+                    )
+                  ]
                 )
               ]
             )

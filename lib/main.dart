@@ -1,32 +1,18 @@
 import 'package:flutter/material.dart';
-import 'package:tampan/utils/appbar.dart';
-import 'package:tampan/views/login_form.dart';
-import 'package:tampan/views/register_form.dart';
+import 'package:tampan/screens/prelogin.dart';
 
-void main() => runApp(const Homepage());
+void main() => runApp(const Myapp());
 
-class Homepage extends StatelessWidget {
-  const Homepage ({super.key});
+class Myapp extends StatelessWidget {
+  const Myapp({super.key});
 
   @override
   Widget build(BuildContext context) {
     return MaterialApp(
-      home: const Homeview(),
+      home: const Prescreen(),
       theme: ThemeData(
-        fontFamily: 'Poppins',
-      ),
-    );
-  }
-}
-
-class Homeview extends StatelessWidget {
-  const Homeview({super.key});
-
-  @override
-  Widget build(BuildContext context) {
-    return const Scaffold(
-      appBar: Appbarform(),
-      body: Registerpg()
+        fontFamily: 'Poppins'
+      )
     );
   }
 }

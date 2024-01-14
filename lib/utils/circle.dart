@@ -5,7 +5,7 @@ class Circleutil extends StatelessWidget {
 
   const Circleutil({
     super.key,
-    this.margin,
+    this.margin
   });
 
   @override
@@ -15,7 +15,7 @@ class Circleutil extends StatelessWidget {
       child: Image.asset(
         'images/icon/circle.png',
         height: 64, width: 64
-      ),
+      )
     );
   }
 }

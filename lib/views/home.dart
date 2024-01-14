@@ -119,7 +119,7 @@ class Homepg extends StatelessWidget {
             "Fitur Andalan",
             style: TextStyle(
               fontSize: 20,
-              color: HexColor("#023047"),
+              color: HexColor("#023047")
             )
           ),
           Container(
@@ -139,7 +139,7 @@ class Homepg extends StatelessWidget {
                   },
                   isUseshape: true,
                   icon: Icons.class_rounded,
-                  iconColor: HexColor('#023047'),
+                  iconColor: HexColor('#023047')
                 ),
                 Featurebutton(
                   label: 'Identifikasi Ikan',
@@ -152,7 +152,7 @@ class Homepg extends StatelessWidget {
                     );
                   },
                   isUseshape: true,
-                  imgPath: 'images/icon/identifikasi.png',
+                  imgPath: 'images/icon/identifikasi.png'
                 )
               ]
             )
@@ -174,7 +174,7 @@ class Homepg extends StatelessWidget {
                     );
                   },
                   isUseshape: true,
-                  imgPath: 'images/icon/au.png',
+                  imgPath: 'images/icon/au.png'
                 ),
                 Featurebutton(
                   label: 'Jadwal Siklus',
@@ -188,7 +188,7 @@ class Homepg extends StatelessWidget {
                   },
                   isUseshape: true,
                   icon: Icons.cached_rounded,
-                  iconColor: HexColor('#219EBC'),
+                  iconColor: HexColor('#219EBC')
                 )
               ]
             )

@@ -17,14 +17,12 @@ class Linetext extends StatelessWidget {
             'OR',
             style: TextStyle(
                 fontSize: 18,
-                fontFamily: 'Poppins',
-                fontWeight: FontWeight.w600,
                 color: HexColor('#818181')
-            ),
+            )
           ),
           const Lineutil(margin: EdgeInsets.only(left: 8))
-        ],
-      ),
+        ]
+      )
     );
   }
 }

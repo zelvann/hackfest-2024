@@ -57,24 +57,24 @@ class _HometampanState extends State<Hometampan> {
               NavigationDestination(
                 selectedIcon: Icon(
                   Icons.comment_bank_rounded,
-                  color: Colors.white,
+                  color: Colors.white
                 ),
                 icon: Icon(
                   Icons.comment_bank_rounded,
-                  color: Colors.black,
+                  color: Colors.black
                 ),
-                label: "Komunitas",
+                label: "Komunitas"
               ),
               NavigationDestination(
                 selectedIcon: Icon(
                   Icons.accessibility_new,
-                  color: Colors.white,
+                  color: Colors.white
                 ),
                 icon: Icon(
                   Icons.accessibility_new,
-                  color: Colors.black,
+                  color: Colors.black
                 ),
-                label: "Profile",
+                label: "Profile"
               )
             ]
         ),
