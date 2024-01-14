@@ -24,6 +24,7 @@ class Profilepg extends StatelessWidget {
               ),
               Container(
                 margin: const EdgeInsets.only(bottom: 15),
+                padding: const EdgeInsets.symmetric(horizontal: 105),
                 child: Buttonwidget(
                     label: 'Masuk',
                     bgColor: Colors.white,
@@ -49,7 +50,6 @@ class Profilepg extends StatelessWidget {
           ),
           Container(
             width: double.infinity, height: 50,
-            // margin: const EdgeInsets.only(bottom: 5),
             padding: const EdgeInsets.all(15),
             color: HexColor('#8ECAE6'),
             child: const Text(

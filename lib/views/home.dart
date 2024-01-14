@@ -1,5 +1,9 @@
 import 'package:flutter/material.dart';
 import 'package:hexcolor/hexcolor.dart';
+import 'package:tampan/screens/analysis.dart';
+import 'package:tampan/screens/history.dart';
+import 'package:tampan/screens/identification.dart';
+import 'package:tampan/screens/schedule.dart';
 import 'package:tampan/widgets/featbutton.dart';
 import 'package:tampan/utils/circle.dart';
 
@@ -23,7 +27,7 @@ class Homepg extends StatelessWidget {
             style: TextStyle(
                 fontSize: 18,
                 color: HexColor('#023047')
-            ),
+            )
           ),
           Container(
             padding: const EdgeInsets.only(top: 13,left: 10, right: 10),
@@ -31,7 +35,7 @@ class Homepg extends StatelessWidget {
             width: double.infinity,
             decoration: BoxDecoration(
                 gradient: LinearGradient(
-                    colors: [HexColor('#8ECAE6'),HexColor('#023047')],
+                    colors: [HexColor('#8ECAE6'), HexColor('#023047')],
                     begin: Alignment.centerLeft,
                     end: Alignment.centerRight
                 ),
@@ -52,8 +56,8 @@ class Homepg extends StatelessWidget {
                         style: TextStyle(
                             fontSize: 12,
                             color: Colors.black
-                        ),
-                      ),
+                        )
+                      )
                     ),
                     Container(
                       margin: const EdgeInsets.only(bottom: 21),
@@ -63,17 +67,17 @@ class Homepg extends StatelessWidget {
                             fontSize: 24,
                             fontWeight: FontWeight.w800,
                             color: Colors.black
-                        ),
-                      ),
-                    ),
-                  ],
+                        )
+                      )
+                    )
+                  ]
                 ),
                 Image.asset(
                     'images/icon/sun.png',
                     width: 64, height: 64
-                ),
-              ],
-            ),
+                )
+              ]
+            )
           ),
           Container(
             padding: const EdgeInsets.symmetric(vertical: 10,horizontal: 10),
@@ -87,7 +91,7 @@ class Homepg extends StatelessWidget {
                   'Hari ini cerah berawan.',
                   style: TextStyle(
                       fontSize: 12
-                  ),
+                  )
                 ),
                 Row(
                   mainAxisAlignment: MainAxisAlignment.start,
@@ -96,7 +100,7 @@ class Homepg extends StatelessWidget {
                       'Hari ini baik untuk: ',
                       style: TextStyle(
                           fontSize: 12
-                      ),
+                      )
                     ),
                     Text(
                       'MENGURAS AIR',
@@ -104,19 +108,19 @@ class Homepg extends StatelessWidget {
                           fontSize: 12,
                           fontWeight: FontWeight.bold,
                           color: HexColor('#FB8500')
-                      ),
-                    ),
-                  ],
-                ),
-              ],
-            ),
+                      )
+                    )
+                  ]
+                )
+              ]
+            )
           ),
           Text(
             "Fitur Andalan",
             style: TextStyle(
               fontSize: 20,
               color: HexColor("#023047"),
-            ),
+            )
           ),
           Container(
             padding: const EdgeInsets.only(top: 5,left: 10,right: 10),
@@ -128,7 +132,10 @@ class Homepg extends StatelessWidget {
                   bgColor: Colors.white,
                   fColor: HexColor('#023047'),
                   isPressed: ()  {
-
+                    Navigator.push(
+                        context,
+                        MaterialPageRoute(builder: (context) => const Historyscreen())
+                    );
                   },
                   isUseshape: true,
                   icon: Icons.class_rounded,
@@ -138,14 +145,17 @@ class Homepg extends StatelessWidget {
                   label: 'Identifikasi Ikan',
                   bgColor: Colors.white,
                   fColor: HexColor('#023047'),
-                  isPressed: () {
-
+                  isPressed: ()  {
+                    Navigator.push(
+                        context,
+                        MaterialPageRoute(builder: (context) => const Iscreen())
+                    );
                   },
                   isUseshape: true,
                   imgPath: 'images/icon/identifikasi.png',
                 )
-              ],
-            ),
+              ]
+            )
           ),
           Container(
             margin: const EdgeInsets.only(bottom: 10),
@@ -157,8 +167,11 @@ class Homepg extends StatelessWidget {
                   label: 'Analisa Usaha',
                   bgColor: Colors.white,
                   fColor: HexColor('#023047'),
-                  isPressed: () {
-
+                  isPressed: ()  {
+                    Navigator.push(
+                        context,
+                        MaterialPageRoute(builder: (context) => const AUscreen())
+                    );
                   },
                   isUseshape: true,
                   imgPath: 'images/icon/au.png',
@@ -167,22 +180,25 @@ class Homepg extends StatelessWidget {
                   label: 'Jadwal Siklus',
                   bgColor: Colors.white,
                   fColor: HexColor('#023047'),
-                  isPressed: () {
-
+                  isPressed: ()  {
+                    Navigator.push(
+                        context,
+                        MaterialPageRoute(builder: (context) => const Schedulescreen())
+                    );
                   },
                   isUseshape: true,
                   icon: Icons.cached_rounded,
                   iconColor: HexColor('#219EBC'),
                 )
-              ],
-            ),
+              ]
+            )
           ),
           Text(
             'Ikan Pilihan Anda',
             style: TextStyle(
                 fontSize: 18,
                 color: HexColor('#023047')
-            ),
+            )
           ),
           Container(
             padding: const EdgeInsets.symmetric(horizontal: 10,vertical: 8),
@@ -193,11 +209,11 @@ class Homepg extends StatelessWidget {
                 Circleutil(margin: EdgeInsets.only(right: 30)),
                 Circleutil(margin: EdgeInsets.only(right: 30)),
                 Circleutil()
-              ],
-            ),
-          ),
-        ],
-      ),
+              ]
+            )
+          )
+        ]
+      )
     );
   }
 }
