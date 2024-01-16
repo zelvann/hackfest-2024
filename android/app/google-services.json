@@ -1,0 +1,39 @@
+{
+  "project_info": {
+    "project_number": "427096750681",
+    "project_id": "tampan-e74a9",
+    "storage_bucket": "tampan-e74a9.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:427096750681:android:047d7e189e4485f3d68f48",
+        "android_client_info": {
+          "package_name": "com.example.tampan"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "427096750681-5fugi1n0mgi7pjs8bk2u1ma3817hh98l.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyA52VPA-U4Bbg-xuGVtMxBMXysllp1OQT0"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "427096750681-5fugi1n0mgi7pjs8bk2u1ma3817hh98l.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

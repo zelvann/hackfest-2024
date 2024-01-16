@@ -4,11 +4,15 @@ import 'package:hexcolor/hexcolor.dart';
 class Formwidget extends StatelessWidget {
   final String label;
   final String hintText;
+  final bool? hideText;
+  final TextEditingController controller;
 
   const Formwidget({
     Key? key,
     required this.label,
-    required this.hintText
+    required this.hintText,
+    this.hideText,
+    required this.controller
   }) : super(key: key);
 
   @override
@@ -30,9 +34,9 @@ class Formwidget extends StatelessWidget {
                 )
               )
             ),
-            Container(
+            Padding(
               padding: const EdgeInsets.symmetric(horizontal: 8,vertical: 6),
-              child: TextField(
+              child: TextFormField(
                 decoration: InputDecoration(
                   border: OutlineInputBorder(
                       borderRadius: BorderRadius.circular(18.0)
@@ -42,7 +46,9 @@ class Formwidget extends StatelessWidget {
                     color: HexColor('#72706C'),
                     fontSize: 16
                   )
-                )
+                ),
+                obscureText: hideText ?? false,
+                controller: controller
               )
             )
           ]

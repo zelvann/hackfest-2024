@@ -1,3 +1,4 @@
+import 'package:firebase_auth/firebase_auth.dart';
 import 'package:flutter/material.dart';
 import 'package:hexcolor/hexcolor.dart';
 import 'package:tampan/screens/home.dart';
@@ -14,7 +15,27 @@ class Loginpg extends StatefulWidget {
 }
 
 class _LoginpgState extends State<Loginpg> {
+  final eController = TextEditingController();
+  final passController = TextEditingController();
   bool isChecked = false;
+
+  Future<void> plogin(String username, String password, BuildContext context) async {
+    final FirebaseAuth auth = FirebaseAuth.instance;
+    try {
+      await auth.signInWithEmailAndPassword(
+          email: username,
+          password: password
+      );
+      if (context.mounted) {
+        Navigator.pushReplacement(
+            context,
+            MaterialPageRoute(builder: (context) => const Homescreen())
+        );
+      }
+    } catch (e) {
+      //
+    }
+  }
 
   @override
   Widget build(BuildContext context) {
@@ -38,13 +59,16 @@ class _LoginpgState extends State<Loginpg> {
               ]
             )
           ),
-          const Formwidget(
-              label: 'First Name',
-              hintText: 'Type Your First Name'
+          Formwidget(
+            label: 'Email',
+            hintText: 'Type Your Email',
+            controller: eController
           ),
-          const Formwidget(
+          Formwidget(
             label: 'Password',
-            hintText: 'Type Your Password'
+            hintText: 'Type Your Password',
+            hideText: true,
+            controller: passController
           ),
           Container(
             margin: const EdgeInsets.only(bottom: 8),
@@ -111,9 +135,10 @@ class _LoginpgState extends State<Loginpg> {
             bgColor: HexColor('#023047'),
             fColor: Colors.white,
             isPressed: () {
-              Navigator.pushReplacement(
-                  context,
-                  MaterialPageRoute(builder: (context) => const Homescreen())
+              plogin(
+                  eController.text,
+                  passController.text,
+                  context
               );
             }
           ),
