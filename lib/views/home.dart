@@ -4,7 +4,7 @@ import 'package:tampan/screens/analysis.dart';
 import 'package:tampan/screens/history.dart';
 import 'package:tampan/screens/identification.dart';
 import 'package:tampan/screens/schedule.dart';
-import 'package:tampan/widgets/featbutton.dart';
+import 'package:tampan/widgets/featurebutton.dart';
 import 'package:tampan/utils/circle.dart';
 
 class Homepg extends StatelessWidget {

@@ -3,8 +3,9 @@ import 'package:flutter/material.dart';
 import 'package:hexcolor/hexcolor.dart';
 import 'package:tampan/screens/home.dart';
 import 'package:tampan/screens/register.dart';
+import 'package:tampan/screens/reset.dart';
 import 'package:tampan/widgets/line_text.dart';
-import 'package:tampan/widgets/input_type.dart';
+import 'package:tampan/widgets/input_field.dart';
 import 'package:tampan/widgets/button.dart';
 
 class Loginpg extends StatefulWidget {
@@ -116,7 +117,7 @@ class _LoginpgState extends State<Loginpg> {
                     onPressed: () {
                       Navigator.pushReplacement(
                           context,
-                          MaterialPageRoute(builder: (context) => const Loginpg())
+                          MaterialPageRoute(builder: (context) => const Resetpg())
                       );
                     },
                     child: Text(

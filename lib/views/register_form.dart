@@ -4,7 +4,7 @@ import 'package:flutter/material.dart';
 import 'package:hexcolor/hexcolor.dart';
 import 'package:tampan/screens/login.dart';
 import 'package:tampan/widgets/button.dart';
-import 'package:tampan/widgets/input_type.dart';
+import 'package:tampan/widgets/input_field.dart';
 import 'package:tampan/widgets/line_text.dart';
 
 class Registerpg extends StatelessWidget {
@@ -20,7 +20,6 @@ class Registerpg extends StatelessWidget {
           email: email,
           password: password
       );
-
       // insert to cloud only if has created json in auth
       final FirebaseFirestore fs = FirebaseFirestore.instance;
       final user = <String,dynamic> {

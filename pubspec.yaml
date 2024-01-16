@@ -19,6 +19,7 @@ dependencies:
   firebase_auth: ^4.16.0
   firebase_ui_auth: ^1.12.1
   cloud_firestore: ^4.14.0
+  google_sign_in: ^6.2.1
 
 dev_dependencies:
   flutter_test:
@@ -29,6 +30,7 @@ flutter:
   uses-material-design: true
   assets:
     - images/icon/au.png
+    - images/bandeng.png
     - images/icon/circle.png
     - images/fish_farmer.png
     - images/icon/goggle.png
