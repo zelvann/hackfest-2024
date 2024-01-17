@@ -54,7 +54,8 @@ class Preloginpg extends StatelessWidget {
                   MaterialPageRoute(builder: (context) => const Registerscreen())
               );
             },
-            isUseshape: true
+            isUseshape: true,
+            margin: const EdgeInsets.only(bottom: 8),
           ),
           Buttonwidget(
             label: 'LOG IN',

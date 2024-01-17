@@ -31,11 +31,15 @@ flutter:
   assets:
     - images/icon/au.png
     - images/bandeng.png
+    - images/icon/camera.png
     - images/icon/circle.png
     - images/fish_farmer.png
+    - images/icon/gallery.png
     - images/icon/goggle.png
     - images/icon/identifikasi.png
+    - images/ikan_terkena_bakteri.png
     - images/logo.png
+    - images/icon/res.png
     - images/icon/sun.png
     - images/icon/unknown.png
   fonts:

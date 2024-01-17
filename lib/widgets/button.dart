@@ -9,6 +9,7 @@ class Buttonwidget extends StatelessWidget {
   final bool? isUseshape;
   final IconData? icon;
   final Color? iconColor;
+  final EdgeInsets? margin;
 
   const Buttonwidget({
     Key? key,
@@ -19,48 +20,42 @@ class Buttonwidget extends StatelessWidget {
     this.imgPath,
     this.isUseshape,
     this.icon,
-    this.iconColor
+    this.iconColor,
+    this.margin
   }) : super(key: key);
 
   @override
   Widget build(BuildContext context) {
     return Container(
-      margin: const EdgeInsets.only(bottom: 8),
-      child: Column(
-        mainAxisAlignment: MainAxisAlignment.center,
-        children: <Widget>[
-          Container(
-            width: double.infinity,
-            padding: const EdgeInsets.symmetric(horizontal: 35),
-            child: ElevatedButton(
-              style: ElevatedButton.styleFrom(
-                backgroundColor: bgColor,
-                foregroundColor: fColor,
-                shape: isUseshape != null
-                    ? RoundedRectangleBorder(
+      margin: margin ?? const EdgeInsets.all(0),
+      padding: const EdgeInsets.symmetric(horizontal: 35),
+      width: double.infinity,
+      child: ElevatedButton(
+          style: ElevatedButton.styleFrom(
+              backgroundColor: bgColor,
+              foregroundColor: fColor,
+              shape: isUseshape != null
+                  ? RoundedRectangleBorder(
                   borderRadius: BorderRadius.circular(18.0),
                   side: BorderSide(color: HexColor('#023047'))
-                ) : null
-              ),
-              onPressed: isPressed,
-              child: Row(
-                mainAxisAlignment: MainAxisAlignment.center,
-                children: [
-                  if (imgPath != null || icon != null)
-                    Padding(
+              ) : null
+          ),
+          onPressed: isPressed,
+          child: Row(
+              mainAxisAlignment: MainAxisAlignment.center,
+              children: [
+                if (imgPath != null || icon != null)
+                  Padding(
                       padding: const EdgeInsets.only(right: 8.0),
                       child: imgPath != null ?
                       Image.asset(
                         imgPath!,
                         width: 15,height: 15,
                       ) : Icon(icon, color: iconColor)
-                    ),
-                  Text(label)
-                ]
-              )
-            )
+                  ),
+                Text(label)
+              ]
           )
-        ]
       )
     );
   }
