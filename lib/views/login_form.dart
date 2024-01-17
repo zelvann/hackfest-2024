@@ -2,8 +2,10 @@ import 'package:firebase_auth/firebase_auth.dart';
 import 'package:flutter/material.dart';
 import 'package:hexcolor/hexcolor.dart';
 import 'package:tampan/screens/home.dart';
-import 'package:tampan/screens/register.dart';
-import 'package:tampan/screens/reset.dart';
+import 'package:tampan/utils/appbar.dart';
+import 'package:tampan/utils/navigator.dart';
+import 'package:tampan/views/email_verification.dart';
+import 'package:tampan/views/register_form.dart';
 import 'package:tampan/widgets/line_text.dart';
 import 'package:tampan/widgets/input_field.dart';
 import 'package:tampan/widgets/button.dart';
@@ -117,7 +119,11 @@ class _LoginpgState extends State<Loginpg> {
                     onPressed: () {
                       Navigator.pushReplacement(
                           context,
-                          MaterialPageRoute(builder: (context) => const Resetpg())
+                          MaterialPageRoute(builder: (context)
+                          => Nextpg(
+                            appbar: const Appbarform(),
+                            body: Resetpassword(),
+                          ))
                       );
                     },
                     child: Text(
@@ -158,7 +164,11 @@ class _LoginpgState extends State<Loginpg> {
                   onPressed: () {
                     Navigator.pushReplacement(
                         context,
-                        MaterialPageRoute(builder: (context) => const Registerscreen())
+                        MaterialPageRoute(builder: (context)
+                        => Nextpg(
+                            appbar: const Appbarform(),
+                            body: Registerpg()
+                        ))
                     );
                   },
                   child: Text(

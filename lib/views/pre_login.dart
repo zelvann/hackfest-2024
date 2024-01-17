@@ -1,7 +1,9 @@
 import 'package:flutter/material.dart';
 import 'package:hexcolor/hexcolor.dart';
-import 'package:tampan/screens/login.dart';
-import 'package:tampan/screens/register.dart';
+import 'package:tampan/utils/appbar.dart';
+import 'package:tampan/utils/navigator.dart';
+import 'package:tampan/views/login_form.dart';
+import 'package:tampan/views/register_form.dart';
 import 'package:tampan/widgets/button.dart';
 
 class Preloginpg extends StatelessWidget {
@@ -51,7 +53,11 @@ class Preloginpg extends StatelessWidget {
             isPressed: () {
               Navigator.pushReplacement(
                   context,
-                  MaterialPageRoute(builder: (context) => const Registerscreen())
+                  MaterialPageRoute(builder: (context)
+                  => Nextpg(
+                      appbar: const Appbarform(),
+                      body: Registerpg()
+                  ))
               );
             },
             isUseshape: true,
@@ -64,7 +70,11 @@ class Preloginpg extends StatelessWidget {
             isPressed: () {
               Navigator.pushReplacement(
                   context,
-                  MaterialPageRoute(builder: (context) => const Loginscreen())
+                  MaterialPageRoute(builder: (context)
+                  => const Nextpg(
+                      appbar: Appbarform(),
+                      body: Loginpg()
+                  ))
               );
             },
             isUseshape: true

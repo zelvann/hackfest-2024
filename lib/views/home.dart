@@ -1,11 +1,10 @@
 import 'package:flutter/material.dart';
 import 'package:hexcolor/hexcolor.dart';
-import 'package:tampan/screens/analysis.dart';
-import 'package:tampan/screens/history.dart';
-import 'package:tampan/screens/identification.dart';
-import 'package:tampan/screens/schedule.dart';
+import 'package:tampan/utils/navigator.dart';
+import 'package:tampan/utils/soon.dart';
 import 'package:tampan/widgets/button.dart';
 import 'package:tampan/widgets/feature_button.dart';
+import 'package:tampan/views/identification.dart';
 
 class Homepg extends StatelessWidget {
   const Homepg({super.key});
@@ -135,7 +134,19 @@ class Homepg extends StatelessWidget {
                               isPressed: ()  {
                                 Navigator.push(
                                     context,
-                                    MaterialPageRoute(builder: (context) => const Historyscreen())
+                                    MaterialPageRoute(builder: (context)
+                                    => Nextpg(
+                                        appbar: AppBar(
+                                            title: Text(
+                                                'Pencatatan Uang',
+                                                style: TextStyle(
+                                                    fontWeight: FontWeight.w800,
+                                                    color: HexColor('#023047')
+                                                )
+                                            )
+                                        ),
+                                        body: const Soonpg()
+                                    ))
                                 );
                               },
                               isUseshape: true,
@@ -149,7 +160,19 @@ class Homepg extends StatelessWidget {
                               isPressed: ()  {
                                 Navigator.push(
                                     context,
-                                    MaterialPageRoute(builder: (context) => const Iscreen())
+                                    MaterialPageRoute(builder: (context)
+                                    => Nextpg(
+                                        appbar: AppBar(
+                                            title: Text(
+                                                'IDENTIFIKASI IKAN',
+                                                style: TextStyle(
+                                                    fontWeight: FontWeight.w800,
+                                                    color: HexColor('#023047')
+                                                )
+                                            )
+                                        ),
+                                        body: const Ipg()
+                                    ))
                                 );
                               },
                               isUseshape: true,
@@ -171,7 +194,19 @@ class Homepg extends StatelessWidget {
                               isPressed: ()  {
                                 Navigator.push(
                                     context,
-                                    MaterialPageRoute(builder: (context) => const AUscreen())
+                                    MaterialPageRoute(builder: (context)
+                                    => Nextpg(
+                                        appbar: AppBar(
+                                            title: Text(
+                                                'Analisis Usaha',
+                                                style: TextStyle(
+                                                    fontWeight: FontWeight.w800,
+                                                    color: HexColor('#023047')
+                                                )
+                                            )
+                                        ),
+                                        body: const Soonpg()
+                                    ))
                                 );
                               },
                               isUseshape: true,
@@ -184,7 +219,19 @@ class Homepg extends StatelessWidget {
                               isPressed: ()  {
                                 Navigator.push(
                                     context,
-                                    MaterialPageRoute(builder: (context) => const Schedulescreen())
+                                    MaterialPageRoute(builder: (context)
+                                    => Nextpg(
+                                        appbar: AppBar(
+                                            title: Text(
+                                                'JADWAL SIKLUS',
+                                                style: TextStyle(
+                                                    fontWeight: FontWeight.w800,
+                                                    color: HexColor('#023047')
+                                                )
+                                            )
+                                        ),
+                                        body: const Soonpg()
+                                    ))
                                 );
                               },
                               isUseshape: true,

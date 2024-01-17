@@ -2,7 +2,9 @@ import 'package:cloud_firestore/cloud_firestore.dart';
 import 'package:firebase_auth/firebase_auth.dart';
 import 'package:flutter/material.dart';
 import 'package:hexcolor/hexcolor.dart';
-import 'package:tampan/screens/login.dart';
+import 'package:tampan/utils/appbar.dart';
+import 'package:tampan/utils/navigator.dart';
+import 'package:tampan/views/login_form.dart';
 import 'package:tampan/widgets/button.dart';
 import 'package:tampan/widgets/input_field.dart';
 import 'package:tampan/widgets/line_text.dart';
@@ -32,7 +34,11 @@ class Registerpg extends StatelessWidget {
           .then((DocumentReference doc)
       => Navigator.pushReplacement(
           context,
-          MaterialPageRoute(builder: (context) => const Loginscreen())
+          MaterialPageRoute(builder: (context)
+          => const Nextpg(
+              appbar: Appbarform(),
+              body: Loginpg()
+          ))
       ));
     } catch (e) {
       //
@@ -99,7 +105,11 @@ class Registerpg extends StatelessWidget {
                   onPressed: () {
                     Navigator.pushReplacement(
                         context,
-                        MaterialPageRoute(builder: (context) => const Loginscreen())
+                        MaterialPageRoute(builder: (context)
+                        => const Nextpg(
+                            appbar: Appbarform(),
+                            body: Loginpg()
+                        ))
                     );
                   },
                   child: Text(

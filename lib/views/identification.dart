@@ -1,6 +1,7 @@
 import 'package:flutter/material.dart';
 import 'package:hexcolor/hexcolor.dart';
-import 'package:tampan/screens/identification.dart';
+import 'package:tampan/utils/navigator.dart';
+import 'package:tampan/views/result.dart';
 
 class Ipg extends StatelessWidget {
   const Ipg({super.key});
@@ -31,7 +32,19 @@ class Ipg extends StatelessWidget {
                       onPressed: () {
                         Navigator.pushReplacement(
                             context,
-                            MaterialPageRoute(builder: (context) => const Resultscreen())
+                            MaterialPageRoute(builder: (context)
+                            => Nextpg(
+                                appbar:AppBar(
+                                    title: Text(
+                                        'IDENTIFIKASI IKAN',
+                                        style: TextStyle(
+                                            fontWeight: FontWeight.w800,
+                                            color: HexColor('#023047')
+                                        )
+                                    )
+                                ),
+                                body: const Respg()
+                            ))
                         );
                       },
                       icon: Image.asset(
@@ -43,7 +56,19 @@ class Ipg extends StatelessWidget {
                       onPressed: () {
                         Navigator.pushReplacement(
                             context,
-                            MaterialPageRoute(builder: (context) => const Resultscreen())
+                            MaterialPageRoute(builder: (context)
+                            => Nextpg(
+                                appbar: AppBar(
+                                    title: Text(
+                                        'IDENTIFIKASI IKAN',
+                                        style: TextStyle(
+                                            fontWeight: FontWeight.w800,
+                                            color: HexColor('#023047')
+                                        )
+                                    )
+                                ),
+                                body: const Respg()
+                            ))
                         );
                       },
                       icon: Image.asset(
