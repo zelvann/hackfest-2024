@@ -104,7 +104,7 @@ Melakukan integrasi dengan platform kalender sehingga memungkinkan untuk mengelo
 <hr>
 <br>
 
-### <div align="left">Terima Kasih</div>
+### <div align="center">Terima Kasih</div>
 > BismillahDirestuiBapak 2.0
 
 `Andika Rahman Teja` `Muhammad Aqil Farrukh` `Muhammad Rifqi Ma'ruf` `Zelvan Abdi Wijaya`
