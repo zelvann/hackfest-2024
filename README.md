@@ -6,7 +6,7 @@
 Tambak Petani Andalan adalah aplikasi yang yang dirancang untuk para petani tambak dalam mengelola usaha tambak. Aplikasi ini menyediakan beberapa fitur pendukung untuk mengoptimalkan hasil produksi ikan dan mengurangi risiko kerugian usaha. Berikut adalah fitur-fitur yang dapat digunakan pada aplikasi TAMPAN:
 </div>
 
-## <div align="left">1.  Buku Keuangan (Financial Ledger)</div> :notebook:
+## <div align="left">1.  Buku Keuangan (Financial Ledger) :notebook: </div> 
 <div align="justify">
 Menawarkan fitur-fitur untuk manajemen keuangan seperti pencatatan pemasukan dan pengeluaran anggaran usaha.
 </div>
