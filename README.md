@@ -33,7 +33,7 @@ Melakukan integrasi dengan platform kalender sehingga memungkinkan untuk mengelo
 <div align="left">Stage 2:</div>
 
 - Melakukan perancangan dasar
-- Membuat halaman login akun, halaman untuk registrasi akun (register), dan homepage
+- Membuat halaman `Login`, `Sign Up`, dan `homepage`
 
 <div align="center">
   <img src="images/docs/login.jpeg" width=20% height= 20%/>
@@ -43,7 +43,7 @@ Melakukan integrasi dengan platform kalender sehingga memungkinkan untuk mengelo
 
 <br>
 
-- Membuat prototipe halaman untuk klasifikasi penyakit ikan
+- Membuat prototipe halaman untuk klasifikasi penyakit ikan dengan menggunakan [TensorFlow](https://www.tensorflow.org/)
 
 <div align="center">
   <img src="images/docs/prototipe_klasifikasi_ikan_sehat.jpg" width=20% height= 20%/>
@@ -54,26 +54,55 @@ Melakukan integrasi dengan platform kalender sehingga memungkinkan untuk mengelo
   <img src="images/docs/prototipe_klasifikasi_ikan_jamur_2.jpg" width=20% height= 20% /> 
 </div>
 
+<br>
+<br>
+
 <div align="left">Stage 3:</div>
 
-- Integrasi Firebase pada halaman Login dan Sign Up dengan menggunakan plugin Auth, Firestore DB
-- Membuat halaman identifikasi ikan, Profile, Komunitas, Pre-Login, Verify Email, dan diagnosis ikan
-- Membuat artikel pada halaman Komunitas
-- Membuat sub bagian homepage(berita lainnya)
+- Integrasi [Firebase](https://firebase.google.com/?hl=id) pada halaman `Login` dan `Sign Up`
+
+<div align="center">
+  <img src="images/docs/login.jpeg" width=20% height= 20% />
+  <img src="images/docs/sign_up.jpeg" width=20% height= 20% />
+</div>
+
+<br>
+
+- Membuat halaman `Pre-Login`, `Verify Email`, dan `Komunitas`
 
 <div align="center">
   <img src="images/docs/prelogin.png" width=20% height= 20%/>
-  <img src="images/docs/sign_up.jpeg" width=20% height= 20% />
-<img src="images/docs/login.jpeg" width=20% height= 20% />
- <img src="images/docs/email_verification.png" width=20% height= 20% />
-<img src="images/docs/home_stage3.png" width=20% height= 20% />
-<img src="images/docs/community.png" width=20% height= 20% />
-<img src="images/docs/article.png" width=20% height= 20% />
-<img src="images/docs/profile.png" width=20% height= 20% />
-<img src="images/docs/source_option.png" width=20% height= 20% />
-<img src="images/docs/result.png" width=20% height= 20% />
+  <img src="images/docs/email_verification.png" width=20% height= 20% />
+  <img src="images/docs/community.png" width=20% height= 20% />
 </div>
 
+<br>
+
+- Membuat halaman `Profile`, `Identifikasi Ikan`, dan `Diagnosis Ikan`
+
+<div align="center">
+  <img src="images/docs/profile.png" width=20% height= 20% />
+  <img src="images/docs/source_option.png" width=20% height= 20% />
+  <img src="images/docs/result.png" width=20% height= 20% />
+</div>
+
+<br>
+
+- Membuat artikel pada halaman `Komunitas`
+
+<div>
+  <img src="images/docs/article.png" width=20% height= 20% />
+</div>
+
+<br>
+
+- Membuat sub bagian `homepage` (berita lainnya)
+
+<div>
+  <img src="images/docs/home_stage3.png" width=20% height= 20% />
+</div>
+
+<br>
 <br>
 
 ### <div align="left">Terima Kasih</div>
