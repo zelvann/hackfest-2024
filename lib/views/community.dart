@@ -1,6 +1,7 @@
 import 'package:flutter/material.dart';
 import 'package:hexcolor/hexcolor.dart';
 import 'package:tampan/utils/navigator.dart';
+import 'package:tampan/widgets/button.dart';
 import 'package:tampan/widgets/detail.dart';
 import 'package:tampan/widgets/news.dart';
 
@@ -26,6 +27,53 @@ class Komunitaspg extends StatelessWidget {
                               fontSize: 15
                           )
                       ),
+                      SizedBox(
+                        width: double.infinity,
+                        child: SingleChildScrollView(
+                          scrollDirection: Axis.horizontal,
+                          child: Row(
+                            mainAxisAlignment: MainAxisAlignment.start,
+                            children: [
+                              Buttonwidget(
+                                label: 'Bandeng',
+                                bgColor: HexColor('#E5E5E5'),
+                                fColor: Colors.black,
+                                padding: const EdgeInsets.symmetric(vertical: 4, horizontal: 8),
+                                isPressed: () {},
+                                width: 130,
+                                margin: const EdgeInsets.only(right: 5),
+                              ),
+                              Buttonwidget(
+                                label: 'Lele',
+                                bgColor: HexColor('#E5E5E5'),
+                                fColor: Colors.black,
+                                padding: const EdgeInsets.symmetric(vertical: 4, horizontal: 8),
+                                isPressed: () {},
+                                width: 95 ,
+                                margin: const EdgeInsets.only(right: 5),
+                              ),
+                              Buttonwidget(
+                                label: 'Udang',
+                                bgColor: HexColor('#E5E5E5'),
+                                fColor: Colors.black,
+                                padding: const EdgeInsets.symmetric(vertical: 4, horizontal: 8),
+                                isPressed: () {},
+                                width: 115,
+                                margin: const EdgeInsets.only(right: 5),
+                              ),
+                              Buttonwidget(
+                                label: 'Mujaer',
+                                bgColor: HexColor('#E5E5E5'),
+                                fColor: Colors.black,
+                                padding: const EdgeInsets.symmetric(vertical: 4, horizontal: 8),
+                                isPressed: () {},
+                                width: 115,
+                                margin: const EdgeInsets.only(right: 5),
+                              )
+                            ]
+                          )
+                        )
+                      )
                     ]
                 )
             ),
@@ -65,7 +113,7 @@ class Komunitaspg extends StatelessWidget {
                         )
                     ))
                 );
-              },
+              }
             ),
             const Newscontainer(
                 path: "images/ikan_terkena_bakteri.png",

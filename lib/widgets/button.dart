@@ -9,7 +9,8 @@ class Buttonwidget extends StatelessWidget {
   final bool? isUseshape;
   final IconData? icon;
   final Color? iconColor;
-  final EdgeInsets? margin;
+  final EdgeInsets? margin, padding;
+  final double? width;
 
   const Buttonwidget({
     Key? key,
@@ -21,15 +22,17 @@ class Buttonwidget extends StatelessWidget {
     this.isUseshape,
     this.icon,
     this.iconColor,
-    this.margin
+    this.margin,
+    this.padding,
+    this.width
   }) : super(key: key);
 
   @override
   Widget build(BuildContext context) {
     return Container(
       margin: margin ?? const EdgeInsets.all(0),
-      padding: const EdgeInsets.symmetric(horizontal: 35),
-      width: double.infinity,
+      padding: padding ?? const EdgeInsets.symmetric(horizontal: 35),
+      width: width ?? double.infinity,
       child: ElevatedButton(
           style: ElevatedButton.styleFrom(
               backgroundColor: bgColor,

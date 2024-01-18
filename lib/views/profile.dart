@@ -1,6 +1,5 @@
 import 'package:flutter/material.dart';
 import 'package:hexcolor/hexcolor.dart';
-import 'package:tampan/widgets/button.dart';
 
 class Profilepg extends StatelessWidget {
   const Profilepg({super.key});
@@ -12,32 +11,19 @@ class Profilepg extends StatelessWidget {
       child: Column(
         crossAxisAlignment: CrossAxisAlignment.start,
         children: [
-          Column(
-            crossAxisAlignment: CrossAxisAlignment.center,
-            children: [
-              Container(
-                margin: const EdgeInsets.only(bottom: 15),
+          Container(
+            margin: const EdgeInsets.only(bottom: 40),
+            child:  Center(
                 child: Image.asset(
-                    'images/icon/unknown.png',
-                    width: 86, height: 86
+                  'images/icon/unknown.png',
+                  width: 86, height: 86,
                 )
-              ),
-              Container(
-                margin: const EdgeInsets.only(bottom: 15),
-                padding: const EdgeInsets.symmetric(horizontal: 105),
-                child: Buttonwidget(
-                    label: 'Masuk',
-                    bgColor: Colors.white,
-                    fColor: HexColor('#219EBC'),
-                    isUseshape: true,
-                    isPressed: () {
-
-                    }
-                )
-              ),
-              Container(
-                margin: const EdgeInsets.only(bottom: 20),
-                child: const Text(
+            )
+          ),
+          Container(
+              margin: const EdgeInsets.only(bottom: 20),
+              child: const Center(
+                child: Text(
                     '"Mari bergabung dengan komunitas TAMPAN!',
                     style: TextStyle(
                         fontSize: 12,
@@ -46,7 +32,6 @@ class Profilepg extends StatelessWidget {
                     )
                 )
               )
-            ]
           ),
           Container(
             width: double.infinity, height: 50,
