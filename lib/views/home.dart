@@ -241,11 +241,11 @@ class Homepg extends StatelessWidget {
                         ]
                     )
                 ),
-                const Text(
+                Text(
                     'Berita Hari Ini',
                     style: TextStyle(
                         fontSize: 18,
-                        color: Colors.black
+                        color: HexColor("#023047")
                     )
                 ),
                 Container(
