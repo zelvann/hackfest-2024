@@ -88,7 +88,7 @@ Melakukan integrasi dengan platform kalender sehingga memungkinkan untuk mengelo
 
 - Membuat artikel pada halaman `Komunitas`
 
-<div>
+<div align="center">
   <img src="images/docs/article.png" width=20% height= 20% />
 </div>
 
@@ -96,11 +96,12 @@ Melakukan integrasi dengan platform kalender sehingga memungkinkan untuk mengelo
 
 - Membuat sub bagian `homepage` (berita lainnya)
 
-<div>
+<div align="center">
   <img src="images/docs/home_stage3.png" width=20% height= 20% />
 </div>
 
 <br>
+<hr>
 <br>
 
 ### <div align="left">Terima Kasih</div>
