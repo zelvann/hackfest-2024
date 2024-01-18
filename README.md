@@ -46,16 +46,13 @@ Melakukan integrasi dengan platform kalender sehingga memungkinkan untuk mengelo
 - Membuat prototipe halaman untuk klasifikasi penyakit ikan dengan menggunakan [TensorFlow](https://www.tensorflow.org/)
 
 <div align="center">
-  <img src="images/docs/prototipe_klasifikasi_ikan_sehat.jpg" width=20% height= 20%/>
   <img src="images/docs/prototipe_klasifikasi_ikan_sehat_2.jpg" width=20% height= 20% /> 
-  <img src="images/docs/prototipe_klasifikasi_ikan_bakteri.jpg" width=20% height= 20%/>
   <img src="images/docs/prototipe_klasifikasi_ikan_bakteri_2.jpg" width=20% height= 20% /> 
   <img src="images/docs/prototipe_klasifikasi_ikan_jamur.jpg" width=20% height= 20%/>
-  <img src="images/docs/prototipe_klasifikasi_ikan_jamur_2.jpg" width=20% height= 20% /> 
 </div>
 
 <br>
------
+<hr>
 <br>
 
 <div align="left">Stage 3:</div>
