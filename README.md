@@ -104,6 +104,19 @@ Melakukan integrasi dengan platform kalender sehingga memungkinkan untuk mengelo
 <hr>
 <br>
 
+# <div align="center">Panduan Penggunaan</div>
+1. Lakukan `git clone` atau unduh seluruh kode yang ada pada repository ini
+2. Pastikan Anda telah memiliki [Flutter SDK](https://docs.flutter.dev/get-started/install) dan telah terkonfigurasi dengan environment perangkat Anda
+3. Jalankan kode dengan menggunakan [Visual Studio Code](https://docs.flutter.dev/tools/vs-code) atau menggunakan [Android Studio](https://docs.flutter.dev/tools/android-studio)
+4. Pastikan Anda memiliki [emulator](https://developer.android.com/studio/run/emulator) pada perangkat Anda dan aktifkan emulator tersebut
+5. Ketik `flutter run` pada terminal IDE yang Anda gunakan dan aplikasi akan berjalan pada emulator
+6. Lakukan proses `Login` untuk jika Anda telah memiliki akun pada aplikasi TAMPAN atau lakukan proses `Sign Up` jika Anda belum pernah membuat akun
+7. Selamat Anda telah berhasil mengoperasikan aplikasi TAMPAN !!!
+
+<br>
+<hr>
+<br>
+
 ## <div align="center">Terima Kasih</div>
 > BismillahDirestuiBapak 2.0
 
